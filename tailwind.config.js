@@ -1,20 +1,17 @@
 /** @type {import('tailwindcss').Config} */
-const forms = require("@tailwindcss/forms");
 module.exports = {
-  content: [
-    "./src/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: ['./app/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
       colors: {
-        background: '#222',
-        foreground: '#A2A2',
+        background: 'hsl(var(--background))',
+        foreground: 'hsl(var(--foreground))',
         btn: {
-          background: '#FFF',
-          'background-hover': '#BBB',
+          background: 'hsl(var(--btn-background))',
+          'background-hover': 'hsl(var(--btn-background-hover))',
         },
       },
     },
   },
-  plugins: [forms],
+  plugins: [],
 }
